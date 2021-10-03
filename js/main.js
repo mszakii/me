@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 625) {
+  if (window.scrollY >= 300) {
     cardup.style = "margin-top: 0; transform: scale(1);";
   } else {
     cardup.style = "margin-top: 1000px; transform: scale(.5);";
@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   // skills section
-  if (window.scrollY >= 800) {
+  if (window.scrollY >= 700) {
     html.style.width = "90%";
     css.style.width = "90%";
     js.style.width = "40%";
@@ -23,7 +23,7 @@ window.addEventListener("scroll", function () {
     arduino.style.width = "5%";
   }
   // language section
-  if (window.scrollY >= 2900) {
+  if (window.scrollY >= 2200) {
     ar.style.width = "100%";
     en.style.width = "65%";
     de.style.width = "10%";
