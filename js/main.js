@@ -23,7 +23,7 @@ window.addEventListener("scroll", function () {
     arduino.style.width = "5%";
   }
   // language section
-  if (window.scrollY >= 1900) {
+  if (window.scrollY >= 2900) {
     ar.style.width = "100%";
     en.style.width = "65%";
     de.style.width = "10%";
