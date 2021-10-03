@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  meta  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--  css  -->
+  <link rel="stylesheet" href="css/master.css">
+  <!--  fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400&display=swap" rel="stylesheet">
+  <!--  title favicon  -->
+  <title>Mohamed Zaky</title>
+  <link rel="shortcut icon" href="media/Mohamed.jpg" />
+</head>
+<body>
+  <!--  Header  -->
+  <header id="home">
+    <div class="container">
+      <section class="one">
+        <span>Hello</span>
+        <h1>I'm Mohamed Zaky</h1>
+        <span>Student & Developer</span>
+        <button onclick="location.href='#about'">More About Me</button>
+      </section>
+      <section class="two">
+        <img src="media/Mohamed.jpg" alt="Mohamed Zaky">
+      </section>
+    </div>
+  </header>
+  <!--  sections  -->
+  <!--  About  -->
+  <section class="about" id="about">
+    <section class="card" id="cardup">
+      <h2>About Me</h2>
+      <p>Hello, I'm Mohamed Elsayed Zaky. I was born in Egypt in 2006. I'm a preparory school student. I love programming. I learned how to code in 2018. Hope you enjoy my portfolio.</p>
+    </section>
+  </section>
+  <!--  skills  -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <section class="progress">
+        <h2>Skills</h2>
+        <span>HTML</span>
+        <span class="pro">
+          <div class="go html" id="html"></div>
+        </span>
+        
+        <span>CSS</span>
+        <span class="pro">
+          <div class="go css" id="css"></div>
+        </span>
+        
+        <span>JavaScript</span>
+        <span class="pro">
+          <div class="go js" id="js"></div>
+        </span>
+        
+        <span>C++</span>
+        <span class="pro">
+          <div class="go c" id="c"></div>
+        </span>
+        
+        <span>Python</span>
+        <span class="pro">
+          <div class="go py" id="py"></div>
+        </span>
+        
+        <span>Arduino</span>
+        <span class="pro">
+          <div class="go arduino" id="arduino"></div>
+        </span>
+        
+      </section>
+    </div>
+  </section>
+  <!--  My Work  -->
+  <section class="my-work" id="myWork">
+    <h2>My Work</h2>
+    <div class="group">
+      <div class="pro" onclick="window.open('https://Mohammed-Zaky.github.io/Elzero2', '_blank')">
+        <img src="media/pro5.jpg" alt="project">
+      </div>
+      <div class="pro" onclick="window.open('https://Mohammed-Zaky.github.io/covid-19', '_blank')">
+        <img src="media/pro3.png" alt="project">
+      </div>
+      <div class="pro" onclick="window.open('https://Mohammed-Zaky.github.io/pomodoro', '_blank')">
+        <img src="media/pro1.jpg" alt="project">
+      </div>
+      <div class="pro" onclick="window.open('https://Mohammed-Zaky.github.io/me2', '_blank')">
+        <img src="media/pro2.png" alt="project">
+      </div>
+      <div class="pro" onclick="window.open('https://Mohammed-Zaky.github.io/Elzero1', '_blank')">
+        <img src="media/pro4.jpg" alt="project">
+      </div>
+      <div class="pro">
+        <img src="media/test.png" alt="project">
+      </div>
+    </div>
+  </section>
+  <!--  language  -->
+  <section class="lang" id="lang">
+    <div class="container">
+      <div class="progress">
+        <h2>My Languages</h2>
+        <span>Arabic</span>
+        <span class="pro">
+          <div class="go arabic" id="ar"></div>
+        </span>
+        <span>English</span>
+        <span class="pro">
+          <div class="go english" id="en"></div>
+        </span>
+        <span>German</span>
+        <span class="pro">
+          <div class="go german" id="de"></div>
+        </span>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!--  social  -->
+  
+  <section class="social" id="social">
+    <div class="container">
+        <h2>Social Media</h2>
+      <div class="icons">
+        <div class="twitter" onclick="window.open('https://twitter.com/Mohamed_Zaky7', '_blank')">
+          <img src="media/twitter.png" alt="twitter">
+        </div>
+        <div class="github" onclick="window.open('https://GitHub.com/mohammed-zaky', '_blank')">
+          <img src="media/github.png" alt="github">
+        </div>
+        <div class="telegram" onclick="window.open('https://t.me/Mohamed_Zaky', '_blank')">
+          <img src="media/telegram.svg" alt="telegram">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--  footer  -->
+  <footer>
+      <div class="one">
+        <span class="sec" onclick="location.hash = 'home'">Home</span>
+        <span class="sec" onclick="location.hash = 'about'">About</span>
+        <span class="sec" onclick="location.hash = 'skills'">Skills</span>
+        <span class="sec" onclick="location.hash = 'myWork'">Work</span>
+        <span class="sec"  onclick="location.hash = 'lang'">Languages</span>
+        <span class="sec" onclick="location.hash = 'social'">Social</span>
+    </div>
+      <div class="two">Designed and Coded by Mohamed Elsayed Zak</div>
+  </footer>
+  
+  <div id="load">
+    <div class="spin"></div>
+  </div>
+  
+<!--  JavaScript  -->
+<script src="js/main.js"></script>
+</body>
+</html>
