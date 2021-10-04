@@ -194,6 +194,7 @@ header .two img {
   box-shadow: -1px 1px 5px var(--shadow);
   display: block;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 .skills .progress .pro .go {
@@ -202,7 +203,6 @@ header .two img {
   background: rgb(66,133,244);
   transition: 1s;
   width: 0;
-  overflow: hidden;
 }
 
 .skills .pro .go.js {
@@ -363,6 +363,7 @@ header .two img {
   box-shadow: -1px 1px 5px var(--shadow);
   display: block;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 .lang .pro .go {
@@ -371,7 +372,6 @@ header .two img {
   background: rgb(66,133,244);
   transition: 1s;
   width: 0;
-  overflow: hidden;
 }
 
 .lang .pro .german {
