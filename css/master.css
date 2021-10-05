@@ -475,19 +475,50 @@ footer .one {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
+  flex-direction: column;
 }
 
+
 footer .one .sec {
-  margin-left: 10px;
   cursor: pointer;
-  padding-bottom: 50px;
   text-transform: uppercase;
+}
+
+footer .share {
+  padding-bottom: 50px;
+}
+
+footer .share,
+footer .share .group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .share .group {
+  flex-direction: row;
+}
+
+footer .share .group .soc {
+  cursor: pointer;
+  width: 40px;
+}
+
+footer .share .group .soc:first-child {
+  margin-right: 20px;
+}
+
+footer .share .group .soc img {
+  width: 100%;
 }
 
 footer .two {
   background: var(--main);
   padding: 10px;
   text-align: center;
+  font-size: 1rem;
 }
 
 /*  load  */
