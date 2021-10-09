@@ -162,32 +162,6 @@ header .two img {
   background: var(--main);
 }
 
-/*.skills .progress .go {
-  width: 100%;
-  height: 15px;
-  border-radius: 50px;
-  background: var(--card);
-  box-shadow: -1px 1px 5px var(--shadow);
-  display: block;
-  margin-bottom: 5px;
-}
-
-.skills .progress .go.html,
-.skills .progress .go.css {
-  background: linear-gradient(to right, rgb(66,133,244) 90%, var(--card) 90%);
-}
-
-.skills .progress .go.JavaScript {
-  background: linear-gradient(to right, rgb(244,180,0) 40%, var(--card) 40%, var(--card));
-  transition: 10s;
-}
-
-.skills .progress .go.c,
-.skills .progress .go.python,
-.skills .progress .go.arduino {
-  background: linear-gradient(to right, rgb(218,68,55) 5%, var(--card) 5%, var(--card));
-}*/
-
 .skills .progress .pro {
   width: 100%;
   border-radius: 50px;
@@ -519,6 +493,74 @@ footer .two {
   padding: 10px;
   text-align: center;
   font-size: 1rem;
+}
+
+/*  control  */
+.control {
+  position: fixed;
+  background: var(--card);
+  top: 0;
+  left: -240px;
+  padding: 20px;
+  transition: .5s;
+  border-right: 2px solid var(--color);
+  height: 100vh;
+}
+
+.control h3 {
+  text-transform: uppercase;
+}
+
+.control .btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control .btn button {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  background: #F8F9FD;
+  color: #1F1F1F;
+}
+
+.control .btn button:hover {
+  transform: scale(.9);
+}
+
+.control .btn #blue {
+  background: #4285f4;
+}
+
+.control .btn #purple {
+  background: #6A7DFC;
+}
+
+.control .btn #red {
+  background: rgb(218,68,55);
+}
+
+.control .btn #green {
+  background: rgb(15,157,88);
+}
+
+.control .btn #dark {
+  background: #141B2D;
+  color: white;
+}
+
+.control .open {
+  position: absolute;
+  top: 40px;
+  right: -20px;
+  border-radius: 0 50% 50% 0;
+  width: 40px;
+  height: 40px;
+  transform: translate(50%);
+  background: var(--card);
+  font-size: 20px;
+  color: var(--color);
 }
 
 /*  load  */

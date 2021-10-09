@@ -29,3 +29,55 @@ window.addEventListener("scroll", function () {
     de.style.width = "10%";
   }
 });
+
+// slider
+
+control.style.left = "-240px";
+openBtn.onclick = function () {
+  if (control.style.left == "-240px") {
+    control.style.left = "0";
+  } else {
+    control.style.left = "-240px";
+  }
+};
+
+// customize
+
+document.body.style = localStorage.theme;
+
+var lightTheme = `--main: #F8F9FD;--card: #FFFFFF;--btn: #4285f4;--color: #1F1F1F;--shadow: rgb(217,217,217)`;
+
+var darkTheme = `--main: #141B2D;--card: #1F2A40;--btn: #6A7DFC;--color: white;--shadow: rgb(22,22,22)`;
+
+light.onclick = function () {
+  localStorage.theme = lightTheme;
+  document.body.style = localStorage.theme;
+}
+
+dark.onclick = function () {
+  localStorage.theme = darkTheme;
+  document.body.style = localStorage.theme;
+}
+
+// colors
+
+if (localStorage.getItem("btn")) {
+  document.body.style = `--btn: ${localStorage.btn}`;
+}
+
+let btns = document.querySelectorAll("#colorGroup button");
+
+btns.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    // console.log(e.currentTarget.dataset.color);
+    localStorage.btn = e.currentTarget.dataset.color;
+    document.body.style = `--btn: ${e.currentTarget.dataset.color}`;
+  })
+});
+
+// reset
+
+reset.onclick = function () {
+  localStorage.clear();
+  location.reload();
+}
