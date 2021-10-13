@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   setTimeout(function() {
     load.style.display = "none";
     sound.play();
-  }, 3000);
+  }, 2000);
 });
 
 window.addEventListener("scroll", function () {
@@ -46,34 +46,36 @@ openBtn.onclick = function () {
 
 document.body.style = localStorage.theme;
 
-var lightTheme = `--main: #F8F9FD;--card: #FFFFFF;--btn: #4285f4;--color: #1F1F1F;--shadow: rgb(217,217,217)`;
+var lightTheme = `--main: #F8F9FD;--card: #FFFFFF;--color: #1F1F1F;--shadow: rgb(217,217,217);`;
 
-var darkTheme = `--main: #141B2D;--card: #1F2A40;--btn: #6A7DFC;--color: white;--shadow: rgb(22,22,22)`;
+var darkTheme = `--main: #141B2D;--card: #1F2A40;--color: white;--shadow: rgb(22,22,22);`;
 
 light.onclick = function () {
   localStorage.theme = lightTheme;
   document.body.style = localStorage.theme;
-}
+  location.reload();
+};
 
 dark.onclick = function () {
   localStorage.theme = darkTheme;
-  document.body.style = localStorage.theme;
-}
+  document.body.style = `${localStorage.theme}${localStorage.btn}`;
+  location.reload();
+};
 
 // colors
 
 if (localStorage.getItem("btn")) {
-  document.body.style = `--btn: ${localStorage.btn}`;
+  document.body.style = `${localStorage.theme}--btn: ${localStorage.btn}`;
 }
 
 let btns = document.querySelectorAll("#colorGroup button");
 
 btns.forEach((button) => {
   button.addEventListener("click", (e) => {
-    // console.log(e.currentTarget.dataset.color);
     localStorage.btn = e.currentTarget.dataset.color;
     document.body.style = `--btn: ${e.currentTarget.dataset.color}`;
-  })
+    location.reload();
+  });
 });
 
 
@@ -81,4 +83,4 @@ btns.forEach((button) => {
 reset.onclick = function () {
   localStorage.clear();
   location.reload();
-}
+};
