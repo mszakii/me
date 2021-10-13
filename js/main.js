@@ -1,6 +1,7 @@
 window.addEventListener("load", function () {
   setTimeout(function() {
     load.style.display = "none";
+    sound.play();
   }, 3000);
 });
 
@@ -75,7 +76,7 @@ btns.forEach((button) => {
   })
 });
 
-// reset
+
 
 reset.onclick = function () {
   localStorage.clear();
