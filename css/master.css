@@ -82,12 +82,15 @@ header .two img {
   width: 300px;
   box-shadow: 2px 2px 10px var(--shadow);
   transition: animation .5s;
-  animation: rotate 1s ease-in-out 2s;
+  animation: rotate .5s ease 2s;
 }
 
 @keyframes rotate {
-  to {
-    transform: rotate(-360deg);
+  50% {
+    transform: scale(.7);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -522,7 +525,6 @@ footer .two {
   border-radius: 5px;
   color: white;
   background: #F8F9FD;
-  color: #1F1F1F;
 }
 
 .control .btn button:hover {
@@ -547,7 +549,11 @@ footer .two {
 
 .control .btn #dark {
   background: #141B2D;
-  color: white;
+}
+
+.control .btn #reset,
+.control .btn #light {
+  color: #1F1F1F;
 }
 
 .control .open {
