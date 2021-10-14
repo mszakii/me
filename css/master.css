@@ -139,6 +139,7 @@ header .two img {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
+  text-align: center;
 }
 
 .skills .progress h2::before,
@@ -208,6 +209,7 @@ header .two img {
   display: flex;
   justify-content: center;
   position: relative;
+  text-align: center;
 }
 
 .my-work h2::before,
@@ -308,6 +310,7 @@ header .two img {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
+  text-align: center;
 }
 
 .lang .progress h2::before,
@@ -384,6 +387,7 @@ header .two img {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
+  text-align: center;
 }
 
 .social h2::before,
@@ -508,6 +512,7 @@ footer .two {
   transition: .5s;
   border-right: 2px solid var(--color);
   height: 100vh;
+  width: 195px;
 }
 
 .control h3 {
@@ -517,6 +522,7 @@ footer .two {
 .control .btn {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .control .btn button {
