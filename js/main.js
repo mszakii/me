@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   // skills section
-  if (window.scrollY >= 700) {
+  if (window.scrollY >= skills.offsetTop) {
     html.style.width = "90%";
     css.style.width = "90%";
     js.style.width = "40%";
@@ -24,7 +24,7 @@ window.addEventListener("scroll", function () {
     arduino.style.width = "5%";
   }
   // language section
-  if (window.scrollY >= 2200) {
+  if (window.scrollY >= lang.offsetTop) {
     ar.style.width = "100%";
     en.style.width = "65%";
     de.style.width = "10%";
