@@ -573,6 +573,14 @@ footer .two {
   background: var(--card);
   font-size: 20px;
   color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control .open > img {
+  width: 80%;
+  pointer-events: none;
 }
 
 /*  load  */
