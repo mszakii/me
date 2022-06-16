@@ -16,9 +16,9 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   // skills section
   if (window.scrollY >= skills.offsetTop) {
-    html.style.width = "90%";
-    css.style.width = "90%";
-    js.style.width = "40%";
+    html.style.width = "95%";
+    css.style.width = "95%";
+    js.style.width = "60%";
     c.style.width = "5%";
     py.style.width = "5%";
     arduino.style.width = "5%";
@@ -27,7 +27,7 @@ window.addEventListener("scroll", function () {
   if (window.scrollY >= lang.offsetTop) {
     ar.style.width = "100%";
     en.style.width = "65%";
-    de.style.width = "10%";
+    de.style.width = "25%";
   }
 });
 
